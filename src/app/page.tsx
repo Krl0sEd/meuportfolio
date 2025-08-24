@@ -4,6 +4,18 @@ import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
 
 const projects = [
+   {
+    title: "Projeto - Lootsy",
+    description: "Site de vendas e revendas de jogos.",
+    techs: ["HTML5", "CSS3", "JavaScript", "Boostrap"],
+    site: "https://krl0sed.github.io/Projeto---Faculdade/",
+    repo: "https://github.com/Krl0sEd/Projeto---Faculdade",
+    videos: [
+      "/ProjetoLootsy1.mp4",
+      "/ProjetoLootsy2.mp4",
+      "/ProjetoLootsy3.mp4",
+    ],
+  },
   {
     title: "CultivaMente",
     description: "Plataforma de ONG educacional com mapa e recursos de acessibilidade.",
@@ -22,6 +34,11 @@ const projects = [
     techs: ["HTML5", "CSS3", "TypeScript", "React/Next", "Framer Motion", "Vite", "Tailwind"],
     site: "http://localhost:3000",
     repo: "https://github.com/Krl0sEd/meuportfolio",
+    iamges: [
+      "/MeuPortfolio1.png",
+      "/MeuPortfolio2.png",
+      "/MeuPortfolio3.png",
+    ],
   },
 ];
 

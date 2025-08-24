@@ -16,9 +16,10 @@ type Props = {
   site?: string;
   repo?: string;
   videos?: string[];
+  images?: string[];
 };
 
-export default function ProjectCard({ title, description, techs, site, repo, videos}: Props) {
+export default function ProjectCard({ title, description, techs, site, repo, videos, images}: Props) {
   return (
     <motion.div whileHover={{ y: -4 }} className="rounded-2xl border p-5 shadow-sm">
       <h3 className="text-lg font-semibold">{title}</h3>
@@ -30,7 +31,6 @@ export default function ProjectCard({ title, description, techs, site, repo, vid
         ))}
       </ul>
       
-       {/* Só renderiza se houver pelo menos 1 vídeo */}
       {videos?.length ? (
         <div className="mt-4">
           <Swiper
@@ -49,6 +49,29 @@ export default function ProjectCard({ title, description, techs, site, repo, vid
                   loop
                   muted
                   playsInline
+                  className="w-full aspect-video rounded-lg object-cover"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      ) : null}
+
+      {images?.length ? (
+        <div className="mt-4">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={10}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            loop
+          >
+            {images.map((img, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={img}
+                  alt={`Screenshot de ${title} - ${index + 1}`}
                   className="w-full aspect-video rounded-lg object-cover"
                 />
               </SwiperSlide>
