@@ -1,13 +1,14 @@
 {
-  "extends": [
-    "development"
-  ],
-  "hints": {
-    "axe/aria": [
-      "default",
-      {
-        "aria-valid-attr-value": "off"
-      }
-    ]
-  }
+  "connector": {
+    "name": "local"
+  },
+  "extends": ["development"],
+  "hints": [
+    "accessibility",
+    "compat-api/html-next",
+    "compat-api/css-next",
+    "no-bad-headers",
+    "performance",
+    "seo"
+  ]
 }
