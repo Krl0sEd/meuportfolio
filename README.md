@@ -18,9 +18,10 @@ O objetivo é apresentar meus projetos, minhas habilidades e facilitar o contato
 - [React Icons](https://react-icons.github.io/react-icons/) - Ícones
 
 ## 📸 Preview
-![Preview do portfólio](./public/MeuPortfolio1.png)
+![Preview do portfólio](./public/portfolio_demo.gif)
 
 🔗 **Deploy online**: [Acesse aqui](https://meu-portfolio.vercel.app)
+
 ![Vercel](https://img.shields.io/badge/Deploy%20with-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## 📂 Estrutura do projeto
