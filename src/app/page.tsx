@@ -34,7 +34,7 @@ const projects = [
     techs: ["HTML5", "CSS3", "TypeScript", "React/Next", "Framer Motion", "Vite", "Tailwind"],
     site: "http://localhost:3000",
     repo: "https://github.com/Krl0sEd/meuportfolio",
-    iamges: [
+    images: [
       "/MeuPortfolio1.png",
       "/MeuPortfolio2.png",
       "/MeuPortfolio3.png",
@@ -74,14 +74,14 @@ export default function Page() {
           <h2 className="text-2xl font-bold">Contato</h2>
           <p className="mt-3">
             Me mande um e-mail em{" "}
-            <a className="underline" href="mailto:seuemail@exemplo.com">
+            <a className="underline" href="mailto:carloseduardobucazio@gmail.com">
               carloseduardobucazio@gmail.com
             </a>.
           </p>
 
           <p>
     Meu telefone para contato:{" "}
-    <a href="999524185" className="underline">
+    <a href="tel:+5521999524185" className="underline">
       +55 (21) 99952-4185
     </a>
   </p>
