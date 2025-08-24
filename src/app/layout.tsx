@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
 
 export const metadata: Metadata = {
   title: "Carlos Bucazio — Portfólio",

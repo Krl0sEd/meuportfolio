@@ -1,5 +1,7 @@
 import Hero from "@/components/hero";
 import ProjectCard from "@/components/ProjectCard";
+import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
 
 const projects = [
   {
@@ -8,6 +10,11 @@ const projects = [
     techs: ["HTML5", "CSS3", "JavaScript", "Boostrap"],
     site: "https://cultivamenteofc.com.br",
     repo: "https://github.com/Krl0sEd/Projeto-Cultiva-Mente",
+    videos: [
+      "/CultivaMente1.mp4",
+      "/CultivaMente2.mp4",
+      "/CultivaMente3.mp4",
+    ],
   },
   {
     title: "Meu Portfólio",
@@ -54,8 +61,16 @@ export default function Page() {
               carloseduardobucazio@gmail.com
             </a>.
           </p>
-        </div>
+
+          <p>
+    Meu telefone para contato:{" "}
+    <a href="999524185" className="underline">
+      +55 (21) 99952-4185
+    </a>
+  </p>
+</div>
       </section>
     </>
   );
 }
+
