@@ -1,5 +1,12 @@
 # 🌐 Meu Portfólio
 
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![React Icons](https://img.shields.io/badge/React%20Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)  
+
 Este é o repositório do meu portfólio pessoal, desenvolvido com **Next.js**, **TypeScript**, **TailwindCSS**, **Framer Motion** e **React Icons**.
 O objetivo é apresentar meus projetos, minhas habilidades e facilitar o contato com recrutadores e colaboradores.
 
@@ -14,6 +21,7 @@ O objetivo é apresentar meus projetos, minhas habilidades e facilitar o contato
 ![Preview do portfólio](./public/MeuPortfolio1.png)
 
 🔗 **Deploy online**: [Acesse aqui](https://meu-portfolio.vercel.app)
+![Vercel](https://img.shields.io/badge/Deploy%20with-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## 📂 Estrutura do projeto
 - `src/app` → Estrutura principal das páginas;
@@ -27,7 +35,8 @@ Clone este repositório e instale as dependências:
 git clone https://github.com/Krl0sEd/meuportfolio.git
 cd meuportfolio
 npm install
-npm run dev
+npm run dev 
+```
 
 
 ## 📬 Contato
