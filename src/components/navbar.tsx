@@ -18,7 +18,7 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-zinc-200/60 bg-white/70 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/60">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="#home" className="font-bold tracking-tight">
-          SeuNome.dev
+          Carlos Eduardo de Oliveira Bucazio
         </Link>
 
         {/* Botão Hamburger */}
