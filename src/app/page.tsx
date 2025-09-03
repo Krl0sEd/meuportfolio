@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Hero from "@/components/hero";
-import Image from "next/image";
+import Hero from '@/components/hero';
+import Image from 'next/image';
 import {
   FiGithub,
   FiLinkedin,
@@ -9,8 +9,8 @@ import {
   FiExternalLink,
   FiChevronLeft,
   FiChevronRight,
-} from "react-icons/fi";
-import { useState } from "react";
+} from 'react-icons/fi';
+import { useState } from 'react';
 
 // Tipagem mais clara
 type Project = {
@@ -25,33 +25,54 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Projeto - Lootsy",
-    description: "Site de vendas e revendas de jogos.",
-    techs: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    site: "https://krl0sed.github.io/Projeto---Faculdade/",
-    repo: "https://github.com/Krl0sEd/Projeto---Faculdade",
-    videos: ["/ProjetoLootsy1.mp4", "/ProjetoLootsy2.mp4", "/ProjetoLootsy3.mp4"],
+    title: 'Projeto - Lootsy',
+    description: 'Site de vendas e revendas de jogos.',
+    techs: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+    site: 'https://krl0sed.github.io/Projeto---Faculdade/',
+    repo: 'https://github.com/Krl0sEd/Projeto---Faculdade',
+    videos: [
+      '/ProjetoLootsy1.mp4',
+      '/ProjetoLootsy2.mp4',
+      '/ProjetoLootsy3.mp4',
+    ],
   },
   {
-    title: "CultivaMente",
-    description: "Plataforma de ONG educacional com mapa e recursos de acessibilidade.",
-    techs: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    site: "https://cultivamenteofc.com.br",
-    repo: "https://github.com/Krl0sEd/Projeto-Cultiva-Mente",
-    videos: ["/CultivaMente1.mp4", "/CultivaMente2.mp4", "/CultivaMente3.mp4"],
+    title: 'CultivaMente',
+    description:
+      'Plataforma de ONG educacional com mapa e recursos de acessibilidade.',
+    techs: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+    site: 'https://cultivamenteofc.com.br',
+    repo: 'https://github.com/Krl0sEd/Projeto-Cultiva-Mente',
+    videos: ['/CultivaMente1.mp4', '/CultivaMente2.mp4', '/CultivaMente3.mp4'],
   },
   {
-    title: "Meu Portfólio",
-    description: "Minha primeira versão do meu portfólio com animações.",
-    techs: ["HTML5", "CSS3", "TypeScript", "React/Next", "Framer Motion", "Vite", "Tailwind"],
-    site: "http://localhost:3000",
-    repo: "https://github.com/Krl0sEd/meuportfolio",
-    images: ["/MeuPortfolio1.png", "/MeuPortfolio2.png", "/MeuPortfolio3.png"],
+    title: 'Meu Portfólio',
+    description: 'Minha primeira versão do meu portfólio com animações.',
+    techs: [
+      'HTML5',
+      'CSS3',
+      'TypeScript',
+      'React/Next',
+      'Framer Motion',
+      'Vite',
+      'Tailwind',
+    ],
+    site: 'http://localhost:3000',
+    repo: 'https://github.com/Krl0sEd/meuportfolio',
+    images: ['/MeuPortfolio1.png', '/MeuPortfolio2.png', '/MeuPortfolio3.png'],
   },
 ];
 
 // --- COMPONENTE ProjectCard ---
-function ProjectCard({ title, description, techs, site, repo, images, videos }: Project) {
+function ProjectCard({
+  title,
+  description,
+  techs,
+  site,
+  repo,
+  images,
+  videos,
+}: Project) {
   const media = images || videos || [];
   const [index, setIndex] = useState(0);
 
@@ -109,8 +130,12 @@ function ProjectCard({ title, description, techs, site, repo, images, videos }: 
 
       {/* Conteúdo */}
       <div className="flex flex-grow flex-col p-5">
-        <h3 className="text-xl font-bold text-zinc-900 dark:text-white">{title}</h3>
-        <p className="mt-2 flex-grow text-sm text-zinc-600 dark:text-zinc-300">{description}</p>
+        <h3 className="text-xl font-bold text-zinc-900 dark:text-white">
+          {title}
+        </h3>
+        <p className="mt-2 flex-grow text-sm text-zinc-600 dark:text-zinc-300">
+          {description}
+        </p>
 
         <div className="mt-3 flex flex-wrap gap-2">
           {techs.map((tech) => (
@@ -157,12 +182,16 @@ export default function Page() {
       {/* SOBRE */}
       <section id="about" className="py-16">
         <div className="mx-auto max-w-6xl px-4 text-center md:text-left">
-          <h2 className="text-3xl font-bold text-zinc-800 dark:text-zinc-100">Sobre</h2>
+          <h2 className="text-3xl font-bold text-zinc-800 dark:text-zinc-100">
+            Sobre
+          </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
-            Apaixonado por tecnologia e aprendizado constante, atuo como desenvolvedor em formação com foco em
-            Full-Stack. Meu objetivo é criar experiências digitais intuitivas e acessíveis, explorando ferramentas como
-            React, Next.js, TypeScript, Tailwind e Bootstrap. Acredito que código bem escrito pode transformar ideias em
-            impacto real.
+            Apaixonado por tecnologia e aprendizado constante, atuo como
+            desenvolvedor em formação com foco em Full-Stack. Meu objetivo é
+            criar experiências digitais intuitivas e acessíveis, explorando
+            ferramentas como React, Next.js, TypeScript, Tailwind e Bootstrap.
+            Acredito que código bem escrito pode transformar ideias em impacto
+            real.
           </p>
         </div>
       </section>
@@ -170,7 +199,9 @@ export default function Page() {
       {/* PROJETOS */}
       <section id="projects" className="bg-zinc-50 py-16 dark:bg-zinc-900">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold text-zinc-800 dark:text-zinc-100">Projetos</h2>
+          <h2 className="text-center text-3xl font-bold text-zinc-800 dark:text-zinc-100">
+            Projetos
+          </h2>
           <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((p) => (
               <ProjectCard key={p.title} {...p} />
@@ -182,9 +213,11 @@ export default function Page() {
       {/* CONTATO */}
       <section id="contact" className="py-16">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl font-bold text-zinc-800 dark:text-zinc-100">Contato</h2>
+          <h2 className="text-3xl font-bold text-zinc-800 dark:text-zinc-100">
+            Contato
+          </h2>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300">
-            Me mande um e-mail em{" "}
+            Me mande um e-mail em{' '}
             <a
               className="underline hover:text-blue-600 dark:hover:text-blue-400"
               href="mailto:carloseduardobucazio@gmail.com"
@@ -194,7 +227,7 @@ export default function Page() {
           </p>
 
           <p className="mt-2 text-zinc-600 dark:text-zinc-300">
-            Ou entre em contato pelo telefone:{" "}
+            Ou entre em contato pelo telefone:{' '}
             <a
               href="tel:+5521999524185"
               className="underline hover:text-blue-600 dark:hover:text-blue-400"
@@ -223,7 +256,12 @@ export default function Page() {
             >
               <FiLinkedin />
             </a>
-            <a href="/CV_CarlosEduardo.pdf" download aria-label="Baixar currículo" className="hover:text-green-600 dark:hover:text-green-400">
+            <a
+              href="/CV_CarlosEduardo.pdf"
+              download
+              aria-label="Baixar currículo"
+              className="hover:text-green-600 dark:hover:text-green-400"
+            >
               <FiDownload />
             </a>
           </div>

@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
+import { motion } from 'framer-motion';
+import { FiGithub, FiLinkedin, FiDownload } from 'react-icons/fi';
 
 export default function Hero() {
   return (
@@ -14,7 +14,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold tracking-tight md:text-6xl"
         >
-          Olá, pode me chamar de{" "}
+          Olá, pode me chamar de{' '}
           <span className="text-purple-600 dark:text-purple-400">
             Carlos Bucazio
           </span>

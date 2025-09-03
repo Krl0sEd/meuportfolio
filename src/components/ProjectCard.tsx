@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import Link from "next/link";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 type Props = {
   title: string;
@@ -33,8 +33,12 @@ export default function ProjectCard({
       whileHover={{ y: -4 }}
       className="rounded-2xl border p-5 shadow-sm bg-white dark:bg-zinc-800"
     >
-      <h3 className="text-lg font-semibold text-zinc-900 dark:text-white">{title}</h3>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{description}</p>
+      <h3 className="text-lg font-semibold text-zinc-900 dark:text-white">
+        {title}
+      </h3>
+      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
+        {description}
+      </p>
 
       <ul className="mt-3 flex flex-wrap gap-2 text-xs text-zinc-500">
         {techs.map((t) => (

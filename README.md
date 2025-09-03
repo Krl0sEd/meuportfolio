@@ -5,12 +5,13 @@
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![React Icons](https://img.shields.io/badge/React%20Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)  
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 Este é o repositório do meu portfólio pessoal, desenvolvido com **Next.js**, **TypeScript**, **TailwindCSS**, **Framer Motion** e **React Icons**.
 O objetivo é apresentar meus projetos, minhas habilidades e facilitar o contato com recrutadores e colaboradores.
 
 ## 🚀 Tecnologias utilizadas
+
 - [Next.js](https://nextjs.org/) - Framework React
 - [TypeScript](https://www.typescriptlang.org/) - Tipagem estática
 - [TailwindCSS](https://tailwindcss.com/) - Estilização
@@ -18,6 +19,7 @@ O objetivo é apresentar meus projetos, minhas habilidades e facilitar o contato
 - [React Icons](https://react-icons.github.io/react-icons/) - Ícones
 
 ## 📸 Preview
+
 ![Preview do portfólio](./public/portfolio_demo.gif)
 
 🔗 **Deploy online**: [Acesse aqui](https://meu-portfolio.vercel.app)
@@ -25,20 +27,21 @@ O objetivo é apresentar meus projetos, minhas habilidades e facilitar o contato
 ![Vercel](https://img.shields.io/badge/Deploy%20with-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## 📂 Estrutura do projeto
+
 - `src/app` → Estrutura principal das páginas;
 - `src/components` → Componentes reutilizáveis (Hero, ProjectCard, etc);
 - `public/` → Imagens, vídeos e arquivos estáticos.
 
 ## 🛠 Como rodar localmente
+
 Clone este repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/Krl0sEd/meuportfolio.git
 cd meuportfolio
 npm install
-npm run dev 
+npm run dev
 ```
-
 
 ## 📬 Contato
 
@@ -50,5 +53,3 @@ npm run dev
 **✨ Feito com dedicação por Carlos Eduardo de Oliveira Bucazio 🚀**
 
 ---
-
-
