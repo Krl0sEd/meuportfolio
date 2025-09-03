@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
 
 const links = [
   { href: "#home", label: "Início" },
@@ -26,7 +25,7 @@ export default function Navbar() {
         <button
           className="rounded-lg border px-3 py-2 md:hidden"
           onClick={() => setOpen(!open)}
-          aria-expanded={open ? "true" : "false"} // ✅ TypeScript e ARIA corretos
+          aria-expanded={open ? "true" : "false"}
           aria-label={open ? "Fechar menu" : "Abrir menu"}
         >
           ☰

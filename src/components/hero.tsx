@@ -7,6 +7,7 @@ export default function Hero() {
   return (
     <section id="home" className="pt-28 md:pt-32">
       <div className="mx-auto max-w-6xl px-4">
+        {/* Título */}
         <motion.h1
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -16,9 +17,11 @@ export default function Hero() {
           Olá, pode me chamar de{" "}
           <span className="text-purple-600 dark:text-purple-400">
             Carlos Bucazio
-          </span>.
+          </span>
+          .
         </motion.h1>
 
+        {/* Descrição */}
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,22 +32,25 @@ export default function Hero() {
           soluções web modernas e eficientes. Atualmente cursando Análise e
           Desenvolvimento de Sistemas (ADS) e estudos de desenvolvimento
           Front-End profissional. Apaixonado por aprender novas tecnologias e
-          explorar áreas como Full-Stack e Análista de Dados.
+          explorar áreas como Full-Stack e Análise de Dados.
         </motion.p>
 
+        {/* Botões */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="mt-6 flex gap-3"
+          className="mt-6 flex flex-wrap gap-3"
         >
           <a
             href="/CarlosBucazioCurriculo.pdf"
             download="CarlosBucazioCurriculo.pdf"
-            className="flex items-center gap-2 rounded-lg border border-black px-4 py-2 
-             text-sm font-medium text-black transition duration-300 
-             hover:bg-purple-600 hover:text-white 
-             dark:border-white dark:text-white dark:hover:bg-purple-500"
+            className="
+              flex items-center gap-2 rounded-lg border border-black px-4 py-2
+              text-sm font-medium text-black transition duration-300
+              hover:bg-purple-600 hover:text-white
+              dark:border-white dark:text-white dark:hover:bg-purple-500
+            "
           >
             <FiDownload /> Baixar CV
           </a>
@@ -52,23 +58,27 @@ export default function Hero() {
           <a
             href="https://github.com/Krl0sEd"
             target="_blank"
-            rel="noopener"
-            className="flex items-center gap-2 rounded-lg border border-black px-4 py-2 
-             text-sm font-medium text-black transition duration-300 
-             hover:bg-purple-600 hover:text-white 
-             dark:border-white dark:text-white dark:hover:bg-purple-500"
+            rel="noopener noreferrer"
+            className="
+              flex items-center gap-2 rounded-lg border border-black px-4 py-2
+              text-sm font-medium text-black transition duration-300
+              hover:bg-purple-600 hover:text-white
+              dark:border-white dark:text-white dark:hover:bg-purple-500
+            "
           >
             <FiGithub /> GitHub
           </a>
-          
+
           <a
             href="https://www.linkedin.com/in/carlos-eduardo-de-oliveira-bucazio-516a7937a"
             target="_blank"
-            rel="noopener"
-            className="flex items-center gap-2 rounded-lg border border-black px-4 py-2 
-             text-sm font-medium text-black transition duration-300 
-             hover:bg-purple-600 hover:text-white 
-             dark:border-white dark:text-white dark:hover:bg-purple-500"
+            rel="noopener noreferrer"
+            className="
+              flex items-center gap-2 rounded-lg border border-black px-4 py-2
+              text-sm font-medium text-black transition duration-300
+              hover:bg-purple-600 hover:text-white
+              dark:border-white dark:text-white dark:hover:bg-purple-500
+            "
           >
             <FiLinkedin /> Linkedin
           </a>

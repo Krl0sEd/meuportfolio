@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -19,18 +19,35 @@ type Props = {
   images?: string[];
 };
 
-export default function ProjectCard({ title, description, techs, site, repo, videos, images}: Props) {
+export default function ProjectCard({
+  title,
+  description,
+  techs,
+  site,
+  repo,
+  videos,
+  images,
+}: Props) {
   return (
-    <motion.div whileHover={{ y: -4 }} className="rounded-2xl border p-5 shadow-sm">
-      <h3 className="text-lg font-semibold">{title}</h3>
+    <motion.div
+      whileHover={{ y: -4 }}
+      className="rounded-2xl border p-5 shadow-sm bg-white dark:bg-zinc-800"
+    >
+      <h3 className="text-lg font-semibold text-zinc-900 dark:text-white">{title}</h3>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{description}</p>
 
       <ul className="mt-3 flex flex-wrap gap-2 text-xs text-zinc-500">
         {techs.map((t) => (
-          <li key={t} className="rounded-full border px-2 py-1">{t}</li>
+          <li
+            key={t}
+            className="rounded-full border px-2 py-1 bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200"
+          >
+            {t}
+          </li>
         ))}
       </ul>
-      
+
+      {/* Swiper de vídeos */}
       {videos?.length ? (
         <div className="mt-4">
           <Swiper
@@ -57,6 +74,7 @@ export default function ProjectCard({ title, description, techs, site, repo, vid
         </div>
       ) : null}
 
+      {/* Swiper de imagens */}
       {images?.length ? (
         <div className="mt-4">
           <Swiper
@@ -69,11 +87,15 @@ export default function ProjectCard({ title, description, techs, site, repo, vid
           >
             {images.map((img, index) => (
               <SwiperSlide key={index}>
-                <img
-                  src={img}
-                  alt={`Screenshot de ${title} - ${index + 1}`}
-                  className="w-full aspect-video rounded-lg object-cover"
-                />
+                <div className="relative w-full aspect-video rounded-lg overflow-hidden">
+                  <Image
+                    src={img}
+                    alt={`Screenshot de ${title} - ${index + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 800px"
+                  />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -81,8 +103,26 @@ export default function ProjectCard({ title, description, techs, site, repo, vid
       ) : null}
 
       <div className="mt-4 flex gap-3">
-        {site && <Link href={site} target="_blank" className="text-sm underline">Preview</Link>}
-        {repo && <Link href={repo} target="_blank" className="text-sm underline">Código</Link>}
+        {site && (
+          <Link
+            href={site}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm underline"
+          >
+            Preview
+          </Link>
+        )}
+        {repo && (
+          <Link
+            href={repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm underline"
+          >
+            Código
+          </Link>
+        )}
       </div>
     </motion.div>
   );
