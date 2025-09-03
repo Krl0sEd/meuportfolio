@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "@/components/hero";
-import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   FiGithub,
   FiLinkedin,
@@ -30,28 +30,57 @@ const projects: Project[] = [
     techs: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     site: "https://krl0sed.github.io/Projeto---Faculdade/",
     repo: "https://github.com/Krl0sEd/Projeto---Faculdade",
-    videos: ["/ProjetoLootsy1.mp4", "/ProjetoLootsy2.mp4", "/ProjetoLootsy3.mp4"],
+    videos: [
+      "/ProjetoLootsy1.mp4",
+      "/ProjetoLootsy2.mp4",
+      "/ProjetoLootsy3.mp4",
+    ],
   },
   {
     title: "CultivaMente",
-    description: "Plataforma de ONG educacional com mapa e recursos de acessibilidade.",
+    description:
+      "Plataforma de ONG educacional com mapa e recursos de acessibilidade.",
     techs: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     site: "https://cultivamenteofc.com.br",
     repo: "https://github.com/Krl0sEd/Projeto-Cultiva-Mente",
-    videos: ["/CultivaMente1.mp4", "/CultivaMente2.mp4", "/CultivaMente3.mp4"],
+    videos: [
+      "/CultivaMente1.mp4",
+      "/CultivaMente2.mp4",
+      "/CultivaMente3.mp4",
+    ],
   },
   {
     title: "Meu Portfólio",
     description: "Minha primeira versão do meu portfólio com animações.",
-    techs: ["HTML5", "CSS3", "TypeScript", "React/Next", "Framer Motion", "Vite", "Tailwind"],
+    techs: [
+      "HTML5",
+      "CSS3",
+      "TypeScript",
+      "React/Next",
+      "Framer Motion",
+      "Vite",
+      "Tailwind",
+    ],
     site: "http://localhost:3000",
     repo: "https://github.com/Krl0sEd/meuportfolio",
-    images: ["/MeuPortfolio1.png", "/MeuPortfolio2.png", "/MeuPortfolio3.png"],
+    images: [
+      "/MeuPortfolio1.png",
+      "/MeuPortfolio2.png",
+      "/MeuPortfolio3.png",
+    ],
   },
 ];
 
 // --- COMPONENTE ProjectCard com Carrossel ---
-function ProjectCard({ title, description, techs, site, repo, images, videos }: Project) {
+function ProjectCard({
+  title,
+  description,
+  techs,
+  site,
+  repo,
+  images,
+  videos,
+}: Project) {
   const media = images || videos || [];
   const [index, setIndex] = useState(0);
 
@@ -59,18 +88,17 @@ function ProjectCard({ title, description, techs, site, repo, images, videos }: 
   const next = () => setIndex((i) => (i === media.length - 1 ? 0 : i + 1));
 
   return (
-    <motion.div
-      className="rounded-2xl bg-white dark:bg-zinc-800 shadow-lg overflow-hidden flex flex-col transition hover:shadow-2xl"
-      whileHover={{ scale: 1.02 }}
-    >
+    <div className="rounded-2xl bg-white dark:bg-zinc-800 shadow-lg overflow-hidden flex flex-col transition hover:shadow-2xl">
       {/* Carrossel */}
       <div className="relative w-full h-56 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
         {media.length > 0 ? (
           <>
             {images ? (
-              <img
+              <Image
                 src={media[index]}
                 alt={title}
+                width={800}
+                height={450}
                 className="h-full w-full object-cover"
               />
             ) : (
@@ -88,12 +116,14 @@ function ProjectCard({ title, description, techs, site, repo, images, videos }: 
               <>
                 <button
                   onClick={prev}
+                  aria-label="Imagem anterior"
                   className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white hover:bg-black/70"
                 >
                   <FiChevronLeft />
                 </button>
                 <button
                   onClick={next}
+                  aria-label="Próxima imagem"
                   className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white hover:bg-black/70"
                 >
                   <FiChevronRight />
@@ -147,7 +177,7 @@ function ProjectCard({ title, description, techs, site, repo, images, videos }: 
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
