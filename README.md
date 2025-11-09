@@ -22,7 +22,7 @@ O objetivo é apresentar meus projetos, minhas habilidades e facilitar o contato
 
 ![Preview do portfólio](./public/portfolio_demo.gif)
 
-🔗 **Deploy online**: [Acesse aqui](https://meu-portfolio.vercel.app)
+🔗 **Deploy online**: [Acesse aqui](https://meuportfolio-indol.vercel.app)
 
 ![Vercel](https://img.shields.io/badge/Deploy%20with-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
