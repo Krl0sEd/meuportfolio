@@ -186,12 +186,16 @@ export default function Page() {
             Sobre
           </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
-            Apaixonado por tecnologia e aprendizado constante, atuo como
-            desenvolvedor em formação com foco em Full-Stack. Meu objetivo é
-            criar experiências digitais intuitivas e acessíveis, explorando
-            ferramentas como React, Next.js, TypeScript, Tailwind e Bootstrap.
-            Acredito que código bem escrito pode transformar ideias em impacto
-            real.
+            Apaixonado por tecnologia, segurança da informação e automação
+            contínua. Tenho vivência prática em Infraestrutura, Cloud e Redes
+            corporativas, buscando sempre otimizar processos através da cultura
+            DevOps. Atualmente, estou focado no desenvolvimento de ferramentas
+            operacionais e painéis de controle, utilizando minha base de
+            desenvolvimento web (HTML, CSS, JS) para construir interfaces de
+            gestão, alinhadas com o back-end e a nuvem (Linux, Docker, Python).
+            Meu objetivo final é garantir que sistemas e servidores sejam não
+            apenas eficientes e ágeis, mas estruturalmente blindados contra
+            ameaças.
           </p>
         </div>
       </section>

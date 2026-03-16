@@ -28,11 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="mt-4 text-lg text-zinc-600 dark:text-zinc-300"
         >
-          Desenvolvedor em formação, com foco em Full-Stack e criação de
-          soluções web modernas e eficientes. Atualmente cursando Análise e
-          Desenvolvimento de Sistemas (ADS) e estudos de desenvolvimento
-          Front-End profissional. Apaixonado por aprender novas tecnologias e
-          explorar áreas como Full-Stack e Análise de Dados.
+          Profissional de Infraestrutura e Cloud em formação, apaixonado por automação, redes e Cibersegurança. Atualmente focado na criação de soluções escaláveis e seguras, cursando Análise e Desenvolvimento de Sistemas (ADS) e em busca de certificações em nuvem. Meu foco é unir o melhor do desenvolvimento com a robustez de operações enquanto foco e otimizo meus conhecimetnos em cibersegurança (DevSecOps).
         </motion.p>
 
         {/* Botões */}
@@ -43,8 +39,8 @@ export default function Hero() {
           className="mt-6 flex flex-wrap gap-3"
         >
           <a
-            href="/CarlosBucazioCurriculo.pdf"
-            download="CarlosBucazioCurriculo.pdf"
+            href="/Carlos Bucazio - Currículo DevOps.pdf"
+            download="Carlos Bucazio - Currículo DevOps.pdf"
             className="
               flex items-center gap-2 rounded-lg border border-black px-4 py-2
               text-sm font-medium text-black transition duration-300
