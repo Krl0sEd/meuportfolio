@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 const links = [
   { href: '#home', label: 'Início' },
   { href: '#about', label: 'Sobre' },
+  { href: '#certificacoes', label: 'Certificações' },
+  { href: '#experiencia', label: 'Experiência' },
   { href: '#projects', label: 'Projetos' },
   { href: '#contact', label: 'Contato' },
 ];

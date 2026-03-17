@@ -2,6 +2,8 @@
 
 import Hero from '@/components/hero';
 import Image from 'next/image';
+import Experience from '@/components/Experience';
+import Certifications from '@/components/Certifications';
 import {
   FiGithub,
   FiLinkedin,
@@ -25,15 +27,24 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: 'Projeto - Lootsy',
-    description: 'Site de vendas e revendas de jogos.',
-    techs: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
-    site: 'https://krl0sed.github.io/Projeto---Faculdade/',
-    repo: 'https://github.com/Krl0sEd/Projeto---Faculdade',
-    videos: [
-      '/ProjetoLootsy1.mp4',
-      '/ProjetoLootsy2.mp4',
-      '/ProjetoLootsy3.mp4',
+    title: 'SyncOps',
+    description:
+      'Dashboard de checklist inteligente projetado para padronizar e automatizar rotinas de deploy e gestão de infraestrutura.',
+    techs: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'GitHub Actions',
+      'CI/CD',
+      'Azure',
+      'Static Web Apps',
+      'Kanban',
+    ], // Ajuste as techs se estiver usando outras!
+    site: '#', // Coloque o link do site aqui quando hospedar
+    repo: 'https://github.com/Krl0sEd/SyncOps', // Coloque o link do seu repositório oficial
+    images: [
+      '/SyncOps1.png', // Lembre de colocar as prints do projeto na sua pasta public!
+      '/SyncOps2.png',
     ],
   },
   {
@@ -200,6 +211,16 @@ export default function Page() {
         </div>
       </section>
 
+      {/* CERTIFICAÇÕES */}
+      <section id="certificacoes" className="py-16">
+        <Certifications />
+      </section>
+
+      {/* EXPERIÊNCIA */}
+      <section id="experiencia" className="py-16 bg-zinc-50 dark:bg-zinc-900">
+        <Experience />
+      </section>
+
       {/* PROJETOS */}
       <section id="projects" className="bg-zinc-50 py-16 dark:bg-zinc-900">
         <div className="mx-auto max-w-6xl px-4">
@@ -261,7 +282,7 @@ export default function Page() {
               <FiLinkedin />
             </a>
             <a
-              href="/CV_CarlosEduardo.pdf"
+              href="/Carlos Bucazio - Currículo DevOps.pdf"
               download
               aria-label="Baixar currículo"
               className="hover:text-green-600 dark:hover:text-green-400"
