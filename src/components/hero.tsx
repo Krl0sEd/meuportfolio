@@ -28,7 +28,12 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="mt-4 text-lg text-zinc-600 dark:text-zinc-300"
         >
-          Profissional de Infraestrutura e Cloud em formação, apaixonado por automação, redes e Cibersegurança. Atualmente focado na criação de soluções escaláveis e seguras, cursando Análise e Desenvolvimento de Sistemas (ADS) e em busca de certificações em nuvem. Meu foco é unir o melhor do desenvolvimento com a robustez de operações enquanto foco e otimizo meus conhecimentos em cibersegurança (DevSecOps).
+          Profissional de Infraestrutura e Cloud em formação, apaixonado por
+          automação, redes e Cibersegurança. Atualmente focado na criação de
+          soluções escaláveis e seguras, cursando Análise e Desenvolvimento de
+          Sistemas (ADS) e em busca de certificações em nuvem. Meu foco é unir o
+          melhor do desenvolvimento com a robustez de operações enquanto foco e
+          otimizo meus conhecimentos em cibersegurança (DevSecOps).
         </motion.p>
 
         {/* Botões */}
